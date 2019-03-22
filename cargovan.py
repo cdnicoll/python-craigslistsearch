@@ -16,12 +16,12 @@ def get_result(query):
         filters=filters
     )
     
-    for result in cl_h.get_results(sort_by='newest', limit=10):
+    for result in cl_h.get_results(sort_by='newest', limit=3):
         print result['name']
         print result['url']
         print result['price']
         print result['datetime']
-        print '\n'
+        print '---------------------------------------'
 
 print 'Fetching ----> Cargo Van'
 get_result('cargo van')
