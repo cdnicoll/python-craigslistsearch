@@ -1,16 +1,20 @@
 from craigslist import CraigslistForSale
 
 filters = {
-    'query': 'chevy express', 
+    'query': {'cargo van', 'chevy express'},
     'search_titles':True,
     'min_price': 5000,
-    'max_price': 10000
+    'max_price': 11000
 }
 
-cl_h = CraigslistForSale(site='vancouver', area={'van', 'nvm', 'bnc', 'rds', 'pml', 'rch'}, category='cta',
-                         filters=filters)
+cl_h = CraigslistForSale(
+    site='vancouver', 
+    area={'van', 'nvm', 'bnc', 'rds', 'pml', 'rch'}, 
+    category='cta',
+    filters=filters
+)
 
-for result in cl_h.get_results(sort_by='newest', geotagged=True, limit=5):
+for result in cl_h.get_results(sort_by='newest', limit=5):
     print result['name']
     print result['url']
     print result['price']
