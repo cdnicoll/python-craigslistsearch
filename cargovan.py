@@ -1,7 +1,7 @@
 from craigslist import CraigslistForSale
 
 filters = {
-    'query': {'cargo van', 'chevy express'},
+    'query': {'cargo van', 'chevy express', 'Savana', 'Sprinter'},
     'search_titles':True,
     'min_price': 5000,
     'max_price': 11000
@@ -14,7 +14,7 @@ cl_h = CraigslistForSale(
     filters=filters
 )
 
-for result in cl_h.get_results(sort_by='newest', limit=5):
+for result in cl_h.get_results(sort_by='newest', limit=10):
     print result['name']
     print result['url']
     print result['price']
