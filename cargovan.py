@@ -23,18 +23,15 @@ def get_result(query):
         print result['datetime']
         print '---------------------------------------'
 
-print 'Fetching ----> Cargo Van'
-get_result('cargo van')
-print '\n\n'
 
-print 'Fetching ----> Chevy Express'
-get_result('chevy express')
-print '\n\n'
+def fetching(type):
+    print 'Fetching ----> ' + type
+    get_result(type)
+    print '\n\n'
 
-print 'Fetching ----> savana'
-get_result('savana')
-print '\n\n'
 
-print 'Fetching ----> sprinter'
-get_result('sprinter')
-print '\n\n'
+fetching('cargo van')
+fetching('chevy express')
+fetching('e250')
+fetching('savana')
+fetching('sprinter')
