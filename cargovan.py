@@ -1,16 +1,16 @@
 from craigslist import CraigslistForSale
 
-filters = {
-    'search_titles':True,
-    'min_price': 5000,
-    'max_price': 11000
-}
-
 # filters = {
 #     'search_titles':True,
-#     'min_price': 11000,
-#     'max_price': 17000
+#     'min_price': 5000,
+#     'max_price': 11000
 # }
+
+filters = {
+    'search_titles':True,
+    'min_price': 10000,
+    'max_price': 13000
+}
 
 def get_result(query):
     filters['query'] = query
@@ -42,7 +42,7 @@ fetching('savana')
 fetching('sprinter')
 
 print 'Dont forget to checkout these sites:'
-print 'https://www.autotrader.ca/heavy-trucks/cube-step-cargo%20vans/bc/?srt=3&pRng=%2C11000&oRng=%2C190000&prv=British%20Columbia&loc=v3m0c5&sts=Used'
+print 'https://wwwb.autotrader.ca/heavy-trucks/cube-step-cargo%20vans/bc/?rcp=15&rcs=0&srt=3&pRng=9000%2C13000&oRng=%2C190000&prx=-2&prv=British%20Columbia&loc=v3m0c5&hprc=False&wcp=False&sts=Used&inMarket=advancedSearch'
 print '------------------------'
-print 'https://ca.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?sourceContext=untrackedExternal_false_0&newSearchFromOverviewPage=true&inventorySearchWidgetType=BODYSTYLE&bodyTypeGroup=bg8&zip=V6J&distance=100&startYear=2005&endYear=&minPrice=0&maxPrice=12000&maxMileage=190000&showNegotiable=false&modelChanged=undefined&filtersModified=true'
+print 'https://ca.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?sourceContext=untrackedExternal_false_0&newSearchFromOverviewPage=true&inventorySearchWidgetType=BODYSTYLE&bodyTypeGroup=bg8&zip=V6J&distance=100&startYear=2005&endYear=&minPrice=9000&maxPrice=14000&maxMileage=190000&showNegotiable=false&modelChanged=undefined&filtersModified=true'
 print '\n'
